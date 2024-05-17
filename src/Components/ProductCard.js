@@ -25,7 +25,7 @@ function ProductCard(props){
     const CheckLogIn = async() => {
         //alert(`working..`)
         try {
-            const response = await fetch('/islogin', {
+            const response = await fetch('https://fserver-1.onrender.com/islogin', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ function ProductCard(props){
         //alert(`${id}`)
         const product = {pid : id}
         try {
-            const response = await fetch('/addcart', {
+            const response = await fetch('https://fserver-1.onrender.com/addcart', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
