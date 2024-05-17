@@ -9,7 +9,7 @@ function Profile() {
   const [logoutBtn, setLogoutBtn] = useState({ display: 'none' });
 
   const navigate = useNavigate();
-
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
   useEffect(() => {
     getUserDetails();
   }, []);
@@ -29,7 +29,7 @@ function Profile() {
 
   const getUserDetails = async () => {
     try {
-      const response = await fetch('https://fserver-1.onrender.com/userprofile', {
+      const response = await fetch(`${API_BASE_URL}/userprofile`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
