@@ -24,9 +24,9 @@ function UserList(){
         fetchMethod();
     },[]);
 
-
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
     const  fetchMethod = async () =>{
-          const res = await fetch('https://fserver-1.onrender.com/tweets');
+          const res = await fetch(`${API_BASE_URL}/tweets`);
           const data = await res.json(); //take the Json responce and parse it, convert into JS Object.
           setItems(data)
           console.log(data)
