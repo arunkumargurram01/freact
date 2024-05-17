@@ -26,12 +26,14 @@ function AdminPage(){
         navigate('/signup')
     }
 
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+    
     //useEffect method for cookies checking 
     const localcookie = async () => {
         //console.log(userCredentials)
         if(userCredentials.mail != '' && userCredentials.password != ''){
         try {
-            const response = await fetch('https://fserver-1.onrender.com/adminlogin', {
+            const response = await fetch(`{API_BASE_URL}/adminlogin`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
