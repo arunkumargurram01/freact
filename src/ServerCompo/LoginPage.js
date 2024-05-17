@@ -26,7 +26,7 @@ const LoginPage = () => {
     const localcookie = async () => {
         console.log(userCredentials)
         try {
-            const response = await fetch('/login', {
+            const response = await fetch('https://fserver-1.onrender.com/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
