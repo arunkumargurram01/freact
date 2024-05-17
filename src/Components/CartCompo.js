@@ -20,6 +20,7 @@ function Cart({cartData}){
     const vegdata = Data.VegitablesData;
     const Frtdata = Data.Fruits;
 
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
     const isEmpty = data.length === 0;
     //console.log(isEmpty)
@@ -33,7 +34,7 @@ function Cart({cartData}){
         s_no : idx
       }
         try{
-            const response = await fetch('https://fserver-1.onrender.com/delitem',{
+            const response = await fetch(`${API_BASE_URL}/delitem`,{
               method : 'POST',
               headers : {
                 'Content-Type': 'application/json',
@@ -81,7 +82,7 @@ function Cart({cartData}){
     const cartItems = async() => {
         //alert(`working...`)
         try{
-            const response = await fetch('https://fserver-1.onrender.com/cartdata', {
+            const response = await fetch(`${API_BASE_URL}/cartdata`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
