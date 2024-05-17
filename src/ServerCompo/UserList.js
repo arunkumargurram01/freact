@@ -38,7 +38,7 @@ function UserList(){
             //acessing stored token from localStorage
             const storedToken = localStorage.getItem('jwtToken');
            // console.log(`Token stored in Local Storage From  = `+ storedToken)
-            const res = await fetch('http://localhost:4000/users', {
+            const res = await fetch('https://fserver-1.onrender.com/users', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${storedToken}`, // Replace with your JWT token
