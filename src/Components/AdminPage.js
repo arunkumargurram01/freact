@@ -31,7 +31,7 @@ function AdminPage(){
         //console.log(userCredentials)
         if(userCredentials.mail != '' && userCredentials.password != ''){
         try {
-            const response = await fetch('/adminlogin', {
+            const response = await fetch('https://fserver-1.onrender.com/adminlogin', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
