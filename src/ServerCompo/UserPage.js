@@ -5,7 +5,7 @@ function UserPage(){
 
     const navigate = useNavigate()
     const [userdata, setUserData] = useState([]);    
-
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
     useEffect(() => {
         fetchMethod()
     },[]);
@@ -13,7 +13,7 @@ function UserPage(){
  
     const fetchMethod = async () => {
         try {
-          const response = await fetch('https://fserver-1.onrender.com/dashboard', {
+          const response = await fetch(`${API_BASE_URL}/dashboard`, {
             credentials: 'include' // Include cookies in the request
           });
           if (!response.ok) {
