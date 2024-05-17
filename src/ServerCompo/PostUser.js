@@ -23,7 +23,7 @@ function ControledCompo(){
                 alert("Enter all the details")
             }
             else {
-                fetch('http://localhost:4000/dbinsert', {
+                fetch('https://fserver-1.onrender.com/dbinsert', {
                     method : 'POST',
                     headers : {
                         'Content-Type' : 'application/json'
