@@ -8,7 +8,7 @@ function UserList(){
     //const [userlist,setuserlist] = useState([{}]);
     const [items,setItems] = useState([]);
 
-
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
     //On Page load this "useeffect" will execute
     useEffect(() => {
         //we are fetching this data from post 4000 which is set by our backend. we are acessing the data
@@ -38,7 +38,7 @@ function UserList(){
             //acessing stored token from localStorage
             const storedToken = localStorage.getItem('jwtToken');
            // console.log(`Token stored in Local Storage From  = `+ storedToken)
-            const res = await fetch('https://fserver-1.onrender.com/users', {
+            const res = await fetch(`${API_BASE_URL}/users`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${storedToken}`, // Replace with your JWT token
