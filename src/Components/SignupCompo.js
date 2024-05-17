@@ -32,6 +32,8 @@ function SignupCompo(){
         navigate('/login')
     }
 
+  const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
   //storing styles in variabls to change styles to show according to wrong credentials to the user
   let mailinp = styles.loginInp;
   let mailname = styles.name; 
@@ -147,7 +149,7 @@ else{
         if(checkString(userCredentials.username)){
 
         try {
-            const response = await fetch('https://fserver-1.onrender.com/signup', {
+            const response = await fetch(`${API_BASE_URL}/signup`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
