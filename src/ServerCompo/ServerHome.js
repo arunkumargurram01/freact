@@ -11,11 +11,11 @@ function ServerHome(){
 
     const [data, setData] = useState(null);
 
-
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
     const userList = async() => {
         //alert(`working...`)
         try{
-            const response = await fetch('/allusers', {
+            const response = await fetch(`${API_BASE_URL}/allusers`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
