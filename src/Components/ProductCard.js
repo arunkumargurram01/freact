@@ -21,11 +21,13 @@ function ProductCard(props){
         },500)
     }
 
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
     //Method for User Login Check
     const CheckLogIn = async() => {
         //alert(`working..`)
         try {
-            const response = await fetch('https://fserver-1.onrender.com/islogin', {
+            const response = await fetch(`${API_BASE_URL}/islogin`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -60,7 +62,7 @@ function ProductCard(props){
         //alert(`${id}`)
         const product = {pid : id}
         try {
-            const response = await fetch('https://fserver-1.onrender.com/addcart', {
+            const response = await fetch(`${API_BASE_URL}/addcart`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
