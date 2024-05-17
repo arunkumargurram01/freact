@@ -33,7 +33,7 @@ function Cart({cartData}){
         s_no : idx
       }
         try{
-            const response = await fetch('/delitem',{
+            const response = await fetch('https://fserver-1.onrender.com/delitem',{
               method : 'POST',
               headers : {
                 'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ function Cart({cartData}){
     const cartItems = async() => {
         //alert(`working...`)
         try{
-            const response = await fetch('/cartdata', {
+            const response = await fetch('https://fserver-1.onrender.com/cartdata', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
