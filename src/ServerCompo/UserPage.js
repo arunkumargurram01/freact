@@ -13,7 +13,7 @@ function UserPage(){
  
     const fetchMethod = async () => {
         try {
-          const response = await fetch('/dashboard', {
+          const response = await fetch('https://fserver-1.onrender.com/dashboard', {
             credentials: 'include' // Include cookies in the request
           });
           if (!response.ok) {
