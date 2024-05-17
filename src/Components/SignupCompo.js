@@ -147,7 +147,7 @@ else{
         if(checkString(userCredentials.username)){
 
         try {
-            const response = await fetch('/signup', {
+            const response = await fetch('https://fserver-1.onrender.com/signup', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
