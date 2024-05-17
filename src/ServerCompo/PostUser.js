@@ -2,6 +2,7 @@ import React,{useState} from "react";
 
 function ControledCompo(){
 
+        const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
         const[inputs, setInputs] = useState({
             id: '',
             name : '',
@@ -23,7 +24,7 @@ function ControledCompo(){
                 alert("Enter all the details")
             }
             else {
-                fetch('https://fserver-1.onrender.com/dbinsert', {
+                fetch(`${API_BASE_URL}/dbinsert`, {
                     method : 'POST',
                     headers : {
                         'Content-Type' : 'application/json'
