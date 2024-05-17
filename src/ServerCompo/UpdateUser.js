@@ -7,6 +7,8 @@ function Updatedata(){
     const [strdata,setStrdata] = useState();
    // const [bool,setBool] = useState('false');
 
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
    const[inputs, setInputs] = useState({
         id: '',
         name : '',
@@ -38,7 +40,7 @@ function Updatedata(){
 
     const search = () => {
         //POST method to send input ID to server & then server gives us the details of that ID we passed
-        fetch('http://localhost:4000/updatedata',{
+        fetch(`${API_BASE_URL}/updatedata`,{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
@@ -56,7 +58,7 @@ function Updatedata(){
 
 
     const Update = () =>{
-        fetch('http://localhost:4000/updatedata', {
+        fetch(`${API_BASE_URL}/updatedata`, {
             method : 'PUT',
             headers : {
                 'Content-Type' : 'application/json'
