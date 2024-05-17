@@ -29,7 +29,7 @@ function Profile() {
 
   const getUserDetails = async () => {
     try {
-      const response = await fetch('/userprofile', {
+      const response = await fetch('https://fserver-1.onrender.com/userprofile', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
