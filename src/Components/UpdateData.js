@@ -20,8 +20,10 @@ function Updatedata(){
         }))
     }
 
+    const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+    
     const search = () => {
-        fetch('/updatedata',{
+        fetch(`${API_BASE_URL}/updatedata`,{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
