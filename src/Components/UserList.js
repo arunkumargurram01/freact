@@ -26,7 +26,7 @@ function UserList(){
 
 
     const  fetchMethod = async () =>{
-          const res = await fetch('tweets');
+          const res = await fetch('https://fserver-1.onrender.com/tweets');
           const data = await res.json(); //take the Json responce and parse it, convert into JS Object.
           setItems(data)
           console.log(data)
