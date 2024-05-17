@@ -33,7 +33,7 @@ function AdminPage(){
         //console.log(userCredentials)
         if(userCredentials.mail != '' && userCredentials.password != ''){
         try {
-            const response = await fetch(`{API_BASE_URL}/adminlogin`, {
+            const response = await fetch(`${API_BASE_URL}/adminlogin`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
