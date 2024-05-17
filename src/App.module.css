@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+    color: brown;
+}
+
+
+/* Main Div */
+.Logo{
+    height: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+/* LOGO Styles */
+.Ldiv{
+    width:;
+    height:;
+    border: 1px solid #67C6E3;
+    background-color: #67C6E3;
+    text-align: center;
+    font-family: cursive;
+    color: #430A5D;
+    border-bottom: ;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: -1%;
+    z-index: 100;
+/* We use z-index to remove fluid & displaying behind
+   from nav and logo.
+    */
+}
+.menu{
+    width: ;
+    height: ;
+    border: 1px solid #67C6E3;
+    background-color: #82defa;
+   /*  background-color: #82defa; */
+}
+
+/* NavLink Div  Styles */
+/* .NavLinkDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+ */
+
+
+/* HOME PAGE CONTENT STYLES */
+/* Content Styles */
+.maindiv{
+    /* here by providing "flex" we can give height accroding to the elements in side the container, without specifiing height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-top:2%;
+    background-color:#FBF9F1;
+}
+
+.linkcompo {
+    flex: 0 0 calc(40% - 10px); /* Set the width of each card and leave a margin gap of 10px */
+    margin: 0% 5%; /* Add margin around each card */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-decoration: none;
+    background-color: #FBF9F1;
+  }
+
+.Productsdiv{
+    width: 99%;
+    min-height: ;
+    display: flex;
+    flex-wrap: wrap;
+    border:;
+    background-color: #FBF9F1;
+    align-items: center;
+    margin: 0% auto;
+}
+
+/* Product Cards */
+.border{
+    width:25%;
+    height:fit-content;
+    min-height: 100px;
+    color: black;
+    border-radius: 5px;
+    margin: 2% 2.3%;
+    padding: 1.5%;
+    display: grid;
+    text-decoration: none;
+}
+
+/* Image Slider Component Container */
+ .imgSLider{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border:;
+    background-color: #FBF9F1;
+    z-index: 50;
+} 
+
+/* container for Label Components*/
+#LabelContainer{
+    display: flex;
+    flex-wrap: wrap;
+    border: ;
+    background-color:#FBF9F1;
+    padding-top: ;
+}
+
+/* Down Navbar container div */
+.downbar{
+    display: grid;
+}
+
+
+/* Search Option styles */
+center{
+    background-color: #FBF9F1;
+}
+
+center>input{
+    width: 50%;
+    height: 23px;
+    margin: 2% 1%;
+    border-radius:6px;
+    padding: 1%;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Responsive site for screens lessthan ipods and greater than avg screen sizes */
+@media screen and (min-width:400px) {  
+    .linkcompo {
+        flex: 0 0 calc(40% - 10px); /* Set the width of each card and leave a margin gap of 10px */
+        margin: 0% 5%; /* Add margin around each card */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        text-decoration: none;
+    }
+    .border{
+        width:29%;
+        height:fit-content;
+        min-height: 120px;
+        border: ;
+        color: black;
+        border-radius: 5px;
+        margin: 2% 0.5%;
+        padding: 1.5%;
+        display: grid;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width:450px) {  
+    .imgSLider{
+        width: 100%;
+    }
+}
+/* Responsive site for screens lessthan ipods and greater than avg screen sizes */
+@media screen and (min-width:550px) {  
+    .border{
+        width:20%;
+        height:fit-content;
+        min-height: 120px;
+        border: ;
+        color: black;
+        border-radius: 5px;
+        margin: 2% 0.5%;
+        padding: 1.5%;
+        display: grid;
+        text-decoration: none;
+    }
+    .maindiv{
+        /* here by providing "flex" we can give height accroding to the elements in side the container, without specifiing height */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between; 
+        background-color:;
+        padding-top:2%;
+        border:;
+    }
+}
+
+/* Responsive site for screens lessthan ipods and greater than avg screen sizes */
+@media screen and (min-width:750px) {  
+ .border{
+    width: 15%;
+ }
+}
+
+/* Responsive site for small laptop screens normal & sizes */
+@media screen and (min-width:750px) {  
+ .border{
+    width: 15%;
+ }
+}
+/* Responsive site for normal laptop screens normal */
+@media screen and (min-width:900px) {  
+    .border{
+        width: 12%;
+    }
+    .linkcompo {
+        flex: 0 0 calc(40% - 10px); /* Set the width of each card and leave a margin gap of 10px */
+        margin: ; /* Add margin around each card */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        text-decoration: none;
+    }
+    center>input{
+        width: 30%;
+        height: 20px;
+        padding: 0.5%;
+    }
+}
+/* Responsive site for desktops screens */
+@media screen and (min-width:1020px) {  
+ .border{
+    width: 12%;
+ }
+}
+
+@media screen and (min-width:1100px) {  
+    .Productsdiv{
+        margin-left: 1%;
+    }
+}
+

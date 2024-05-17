@@ -1,0 +1,317 @@
+
+.profile{
+    width:30px;
+    height: 25px;
+    padding:.4% .4% .4% 0px;
+    border:;
+    border-radius: 5px;
+    display: flex;
+    margin: .6%;
+    position: sticky;
+    animation: roll 3s linear infinite;
+}
+
+body{
+    background-color: #FBF9F1;
+}
+
+
+/* NAvBar Component Styles */
+#navdiv{
+    width: 25px;
+    height: 20px;
+    margin: 0 auto;
+    border:2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5% 0.5%;
+    cursor: pointer;
+    float: right;
+    margin-top: -31px;
+    margin-right: 2%;
+}
+.line{
+    width: 70%;
+    height:2px;
+    border: 1px solid black;
+    background-color: black;
+    margin:2px 1px 2px 1px;
+    transition: 0.5s;
+}
+#change{
+    opacity:0.5;
+}
+
+
+/*  */
+
+/* Toggle After Clicking Styles */
+#middleAfter{
+    opacity: 0;
+    transition: 0s;
+}
+
+#topAfter{
+    position: relative;
+    top:7.5px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+#bottomAfter{
+    position: relative;
+    bottom:6px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+
+/* NavLinks Styles */
+/* #MainDivBefore{
+    width: 100%;
+    height: 0px;
+    display: none;
+    transition: 0px 1s ease;
+}
+#MainDivAfter{
+    width: 100%;
+    height: 90px;
+    bottom:6px;
+    background-color: rgb(243, 165, 204);
+    margin:2% 0 0 0;
+    bottom: 0px;
+    overflow: ;
+    transition: 90px 1s ease-in-out;  
+} */
+
+/* Laptop screen Navbar styles */
+#navlist{
+    width: 80%;
+    display: flex;
+    margin-top: -3.5%;
+    float: right;
+    border:;
+    background-color:none;
+    justify-content:space-around; 
+    display: none;       
+}
+
+.Nav{
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 31, 29);
+    overflow-x:hidden;
+    transition: 0.5s;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.95;
+}
+
+.navClose{
+    width: 60%;
+    left:-420px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    background-color: rgb(32, 31, 29);
+    height: 400px;
+    overflow-x:hidden;
+    /* Here Margin-top in both open&close will make sideslide  animation*/
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    transition:0.5s;
+    opacity: 0.9;
+}
+
+/* NavBar Links & Divs Styles */
+.innerNavDiv{
+    padding: 8% 0%;
+}
+
+.link{
+    width: 100%;
+    height: fit-content;
+    margin: 1%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aliceblue;
+    padding-left: 0%;
+    padding-right: 2%;
+    border:;
+}
+
+.link:hover{
+    color:  #F2613F;
+}
+
+.imgDiv{
+    width: 30px;
+    height: 30px;
+    margin: 1%;
+}
+
+
+.link a:hover{
+    color: aliceblue;
+}
+
+/* Down Gap Div Styles */
+#downgapDiv{
+    height: 55px;
+    background-color: ;
+}
+
+.Linkcompo{
+    text-decoration: none;
+}
+
+
+@keyframes roll {
+    0%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#navlist{
+
+}
+
+/* Responsive CSS */
+@media screen and (min-width:350px){  
+    .Nav{
+        width: 100%;
+        height: 400px;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgb(32, 31, 29);
+        overflow-x:hidden;
+        transition: 0.5s;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.95;
+    }
+}
+
+@media screen and (min-width:400px) and (min-width:500px){  
+    .Nav{
+        width: 60%;
+        height: 400px;
+        position: fixed;
+        margin-top: 12%;
+    }
+    .navClose{
+        width: 60%;
+        left:-420px;
+        position: fixed;
+        height: 400px;
+        overflow-x:hidden;
+        margin-top: 12%;
+    }
+}
+
+@media screen and (min-width:500px){  
+    #navdiv{
+        margin-top: -33px;
+    }
+    .Nav{
+        width: 60%;
+        height: 320px;
+        position: fixed;
+        margin-top: 12%;
+    }
+    .navClose{
+        width: 60%;
+        left:-420px;
+        position: fixed;
+        height: 320px;
+        overflow-x:hidden;
+        margin-top: 12%;
+    }
+}
+@media screen and (min-width:690px){
+    .navClose{
+        left:-60%;
+    }
+}
+@media screen and (min-width:700px){  
+    .Nav{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        margin-top:0px;
+        display: none;
+    }
+    .link{
+        color:#704264;
+        margin-top: 4px;
+    }
+    #navdiv{
+        border:2px solid red;
+        display: none;
+    }
+    #navlist{
+        width: 90%;
+        display: flex;
+        margin-top: -5.5%;
+        float: right;
+        border:;
+        background-color:none;
+        justify-content:space-around;        
+    }
+    .Linkcompo{
+        border:;
+        width: fit-content;
+        text-wrap:wrap;
+    }
+    .navClose{
+        width: 100%;
+        left: 0px;
+        border: 2px solid  red;
+        margin-top:-5%;
+        z-index: 1;
+        display: none;
+    }
+    #downgapDiv{
+        display: none;
+    }
+}
+
+@media  screen and (min-width:850px){
+    #navlist{
+        margin-top: -4.5%;
+    }
+}
+
+@media  screen and (min-width:900px){
+    #navlist{
+        margin-top: -4.5%;
+    }
+}
+@media  screen and (min-width:1000px){
+    #navlist{
+        margin-top: -4%;
+    }
+}
+@media  screen and (min-width:1200px){
+    #navlist{
+        margin-top: -3.5%;
+    }
+}

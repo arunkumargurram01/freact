@@ -1,0 +1,343 @@
+/* Common Single product Add to cart Styles */
+#border{
+    width:120px;
+    min-height:120px;
+    max-height: auto;
+    border: 1.5px solid rgb(168, 167, 167);
+    color: black;
+    border-radius: 5px;
+    margin: 1% auto;
+    padding: 5% 5% 0% 5%;
+    display: grid;
+    background-color: white;
+    box-shadow: 3px 3px 8px rgb(168, 167, 167);
+
+}
+#imgdiv {
+    width: 100%;
+    height: 100px;
+    border: ;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #39057d;
+}
+.priceDiv{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 2% 2% 0;
+}
+.titlediv{
+    text-align: center;
+}
+#qty{
+    color :rgb(252, 197, 1)
+}
+#price{
+    color: rgb(252, 197, 1);
+}
+.btndiv{
+    width: 100px;
+    height: auto;
+    margin: 5% auto;
+    border: ;
+    display: flex;
+}
+.cartbtn{
+    width: 90px;
+    height: 25px;
+    border: 2px solid rgb(247, 136, 226);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgb(247, 136, 226);
+    margin: 0 auto;
+}
+.cartbtn:hover{
+    border: 2px solid rgb(5, 167, 13);
+    background-color: rgb(5, 167, 13);
+    cursor: pointer;
+}
+/* Duplicate Productcard Styles */
+#mduplidiv{
+    min-height: 100px;
+    margin-top: -136.5%;
+    display: ;
+}
+#duplicateborder{
+    width:100%;
+    height:100%;
+    min-height: 100px;
+    border: 1.5px ;
+    color: black;
+    border-radius: 5px;
+    margin: 2% 2.3%;
+    padding: 5% 5% 0% 5%;
+    display: grid;
+
+    animation: addtocart 0.5s linear;
+}
+#duplicateimg{
+    width: 100%;
+    height: auto;
+}
+.duplicatetitlediv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+}
+#p1{
+
+}
+
+
+
+/* Animation of ADD To Cart */
+@keyframes addtocart {
+    0%{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: ;
+        font-size: 14px;
+    }
+    10%{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: -1%;
+        left: 50%;
+        font-size: 14px;
+    }
+    20%{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        top: ;
+        left: 70%;
+        font-size: 10px;
+        
+    }
+    30%{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: ;
+        left: 100%;
+        font-size: 0;
+        margin: 0; 
+    }
+    50%{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: ;
+        left:110%;
+        font-size: 0;    
+    }
+    80%{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: ;
+        left:130%;
+        font-size: 0;
+        
+    }
+    100%{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 350%;
+        left:150%;
+        font-size: 0;
+
+    }
+}
+
+
+
+@media screen and (min-height:600px) {
+    @keyframes addtocart {
+        0%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: ;
+            font-size: 14px;
+        }
+        10%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: -1%;
+            left: 70%;
+            font-size: 14px;
+        }
+        20%{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            top: ;
+            left: 100%;
+            font-size: 10px;
+            
+        }
+        30%{
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: ;
+            left: 120%;
+            font-size: 0;
+            margin: 0; 
+        }
+        50%{
+            width: 60px;
+            height: 60px;
+            position: relative;
+            top: ;
+            left:150%;
+            font-size: 0;    
+        }
+        80%{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: ;
+            left:170%;
+            font-size: 0;
+            
+        }
+        100%{
+            width: 10px;
+            height: 10px;
+            position: relative;
+            top: 350%;
+            left: 190%;
+            font-size: 0;
+    
+        }
+    }
+     
+}
+@media screen and (min-width:550px) {
+    @keyframes addtocart {
+        0%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: ;
+            font-size: 14px;
+        }
+        10%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: -1%;
+            left: 70%;
+            font-size: 14px;
+        }
+        20%{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            top: ;
+            left: 100%;
+            font-size: 10px;
+            
+        }
+        30%{
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: ;
+            left: 120%;
+            font-size: 0;
+            margin: 0; 
+        }
+        50%{
+            width: 60px;
+            height: 60px;
+            position: relative;
+            top: ;
+            left:150%;
+            font-size: 0;    
+        }
+        80%{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: ;
+            left:170%;
+            font-size: 0;
+            
+        }
+        100%{
+            width: 10px;
+            height: 10px;
+            position: relative;
+            top: 350%;
+            left: 190%;
+            font-size: 0;
+    
+        }
+    }
+     
+}
+
+
+@media screen and (min-width:550px) {
+
+    #mduplidiv{
+        min-height: 100px;
+        margin-top: -136.5%;
+        display:none ;
+    }
+    #duplicateborder{
+        width:100%;
+        height:100%;
+        min-height: 100px;
+        border: 1.5px ;
+        color: black;
+        border-radius: 5px;
+        margin: 2% 2.3%;
+        padding: 5% 5% 0% 5%;
+        display: none;
+    
+        animation: addtocart 0.5s linear;
+    }
+    #duplicateimg{
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+
+    @keyframes addtocart {
+        0%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: ;
+            font-size: 14px;
+        }
+        100%{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: ;
+            font-size: 14px;
+        }
+    }
+
+}

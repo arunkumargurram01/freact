@@ -1,0 +1,495 @@
+/* Main Card Styles*/
+/* .cdiv{
+    width: 30%;
+    height: fit-content;
+    border: 2px solid black;
+    color: ;
+    border-radius: 6px;
+    margin: 2% 3.6%;
+    padding: 3%;
+    background-color: ;
+    flex:1;
+}
+.imgdiv{
+    width: 100%;
+    min-height: 100px;
+    border:; 
+}
+.titlediv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+}
+.mainh5{
+    font-size: 20px;
+} */
+
+
+/* Product Card Styles*/
+
+
+
+/* .Producth5{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+} */
+
+
+/* Common Single product Add to cart Styles */
+/* #border{
+    width:120px;
+    min-height:120px;
+    max-height: auto;
+    border: 1.5px solid black;
+    color: black;
+    border-radius: 5px;
+    margin: 1% auto;
+    padding: 5% 5% 0% 5%;
+    display: grid;
+
+}
+#imgdiv {
+    width: 100%;
+    height: 100px;
+    border: ;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #39057d;
+}
+.priceDiv{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 2% 2% 0;
+}
+#qty{
+    color :rgb(252, 197, 1)
+}
+#price{
+    color: rgb(252, 197, 1);
+}
+.btndiv{
+    width: 100px;
+    height: auto;
+    margin: 5% auto;
+    border: ;
+    display: flex;
+}
+.cartbtn{
+    width: 90px;
+    height: 25px;
+    border: 2px solid rgb(247, 136, 226);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgb(247, 136, 226);
+    margin: 0 auto;
+}
+.cartbtn:hover{
+    border: 2px solid rgb(5, 167, 13);
+    background-color: rgb(5, 167, 13);
+
+}
+ */
+/* Duplicate Productcard Styles */
+/* #mduplidiv{
+    min-height: 100px;
+    margin-top: -136.5%;
+    display: ;
+}
+#duplicateborder{
+    width:100%;
+    height:100%;
+    min-height: 100px;
+    border: 1.5px ;
+    color: black;
+    border-radius: 5px;
+    margin: 2% 2.3%;
+    padding: 5% 5% 0% 5%;
+    display: grid;
+
+    animation: addtocart 0.5s linear;
+}
+#duplicateimg{
+    width: 100%;
+    height: auto;
+}
+.duplicatetitlediv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+}
+#p1{
+
+} */
+
+
+
+/* Animation of ADD To Cart */
+/* @keyframes addtocart {
+    0%{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: ;
+        font-size: 14px;
+    }
+    10%{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: -1%;
+        left: 50%;
+        font-size: 14px;
+    }
+    20%{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        top: ;
+        left: 70%;
+        font-size: 10px;
+        
+    }
+    30%{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: ;
+        left: 100%;
+        font-size: 0;
+        margin: 0; 
+    }
+    50%{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: ;
+        left:110%;
+        font-size: 0;    
+    }
+    80%{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: ;
+        left:130%;
+        font-size: 0;
+        
+    }
+    100%{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 350%;
+        left:150%;
+        font-size: 0;
+
+    }
+}
+ */
+
+
+
+/* Label Component Styles */
+.labeldiv{
+    width:95%;
+    height: 20vh;
+    border: 2px solid black;
+    background-color: ;
+    margin: 2% auto;
+    margin-bottom: 3.7%;
+    border-radius: 6px;
+}
+
+/* Down Navbar component Styles */
+.DN_div{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background-color: #82defa;
+    opacity:0.8 ;
+    /* This "position:fixed" && bottom:0 will place the div fix at bottom of the screen like a bottom navbar*/
+    position: fixed;
+    bottom: 0px;
+    padding: 1.5% 0;
+}
+.opt_div:nth-child(1){
+    margin-left: 5%;
+}
+.opt_div:nth-child(3){
+    margin-right: 5%;
+}
+.opt_div{
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 1%;
+}
+#Indicator{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+#none{
+    display:none;
+}
+
+
+/* Image Slider Styles*/
+#slideContainer{
+    width:90%;
+    height: 200px;
+    margin: 2% auto;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #FBF9F1;
+    pointer-events: none;
+}
+
+
+/* To overcome the flex box problem we need to use "min-width" attribute to change 
+   default width of the elemnts after using flex-box attribute.
+*/
+.slides{
+    min-width: 90%;
+    height: 90%;
+    border: ;
+    margin:2% auto;
+    margin-right: 2%;
+    text-align: center;
+    border-radius: 6px;
+    animation: slide 10s infinite;
+    color: aliceblue;
+    background-image: /* linear-gradient(to bottom right, #474E68,#827397) */;
+    pointer-events: none;
+    background-color: #FBF9F1;
+}
+/* To avoid the slidebars we use this*/
+#slideContainer::-webkit-scrollbar{
+    display: none;
+}
+
+#firstImg{
+    margin-left: 2%;
+}
+
+.sliderImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ANimation for Automatic Sliding */
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0);
+    }
+    33.3%{
+        transform: translateX(-100%)
+    }
+    66.66%{
+        transform: translateX(-200%)
+    }
+    100%{
+        /* transform: translateX(-400%); */
+        transform: translateX(0%)
+    } 
+}
+
+#carth1{
+    color: black;
+}
+
+.cartdiv{
+    width: 35px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-top:0.2%;
+    display:none;
+}
+
+
+@media screen and (min-width:450px){
+    #slideContainer{
+        width:90%;
+        height: 230px;
+    }
+}
+@media screen and (min-width:500px){
+    #slideContainer{
+        width:90%;
+        height: 240px;
+    }
+}
+@media screen and (min-width:550px){
+    #slideContainer{
+        width:90%;
+        height: 255px;
+    }
+    .slides{
+        min-width: 80%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:90%;
+        height: 23vh;
+    }
+}
+@media screen and (min-width:600px){
+    #slideContainer{
+        width:90%;
+        height: 267px;
+    }
+}
+@media screen and (min-width:650px){
+    #slideContainer{
+        width:90%;
+        height: 270px;
+    }
+    .slides{
+        min-width: 70%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:80%;
+        height: 23vh;
+    }
+}
+@media screen and (min-width:700px){
+    #slideContainer{
+        width:90%;
+        height: 270px;
+    }
+    .slides{
+        min-width: 65%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:80%;
+        height: 25vh;
+    }
+}
+@media screen and (min-width:800px){
+    #slideContainer{
+        width:90%;
+        height: 270px;
+    }
+    .slides{
+        min-width: 55%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:80%;
+        height: 27vh;
+    }
+}
+@media screen and (min-width:950px){
+    #slideContainer{
+        width:90%;
+        height: 270px;
+    }
+    .slides{
+        min-width: 50%;
+        height: 90%;
+    }
+    .cartdiv{
+        display: block;
+    }
+}
+@media screen and (min-width:950px){
+    .slides{
+        min-width: 50%;
+        height: 90%;
+    }
+}
+@media screen and (min-width:1100px){
+    .slides{
+        min-width: 48%;
+        height: 90%;
+    }
+    /* ANimation for Automatic Sliding */
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0);
+    }
+    33.3%{
+        transform: translateX(-100%)
+    }
+    66.66%{
+        transform: translateX(-180%)
+    }
+    100%{
+        /* transform: translateX(-400%); */
+        transform: translateX(0%)
+    } 
+  }
+  .labeldiv{
+    width:80%;
+    height: 30vh;
+  }
+}
+@media screen and (min-width:1150px){
+    .slides{
+        min-width: 44%;
+        height: 90%;
+    }
+}
+@media screen and (min-width:1220px){
+    .slides{
+        min-width: 40%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:80%;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width:950px){
+    .DN_div{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .slides{
+        min-width: 40%;
+        height: 90%;
+    }
+    .labeldiv{
+        width:70%;
+        height: 45vh;
+        border: 2px solid green;
+    }
+}

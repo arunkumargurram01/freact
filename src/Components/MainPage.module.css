@@ -1,0 +1,73 @@
+/* Styles of main pages [Vegitables, Fruits] pages*/
+
+.cdiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #7ED7C1;
+    border-radius: 6px;
+    margin: 2% 3.6%;
+    padding: 3%;
+    background-color:white ;
+    flex:1; 
+    box-shadow: 1px 1px 15px rgb(203, 201, 201);
+}
+
+.imgdiv{
+    width: 100%;
+    min-height: 90px;
+    max-width:300px;
+    border:;
+    margin: 0% auto;
+    transition:transform 0.3s ease;
+}
+.imgdiv:hover{
+    transform: scale(1.1);
+}
+.mainImg{
+    height: 100px;
+    width: 100%;
+}
+.titlediv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+}
+.mainh5{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width:600px){
+    .mainImg{
+        height: 130px;
+    }
+}
+@media screen and (min-width:800px){
+    .mainImg{
+        height: 140px;
+    }
+}
+@media screen and (min-width:900px){
+    .mainImg{
+        height: 150px;
+    }
+    .cdiv{
+        max-width:310px;
+    }
+}
+@media screen and (min-width:1000px){
+    .mainImg{
+        height: 150px;
+    }
+}
+@media screen and (min-width:1100px){
+    .mainImg{
+        height: 150px;
+    }
+}
+@media screen and (min-width:1200px){
+    .mainImg{
+        height: 150px;
+    }
+}
