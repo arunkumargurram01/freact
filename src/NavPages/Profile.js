@@ -57,13 +57,33 @@ const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
     navigate('/login');
   };
 
-  const logout = () => {
+/*   const logout = () => {
     var now = new Date();
     now.setTime(now.getTime() - 1 * 1000);
     var expires = now.toUTCString();
     document.cookie = 'JWTcookie' + '=; expires=' + expires + '; path=/;';
     navigate('/');
-  };
+  }; */
+
+  //Code to logout user when project is deployed 
+  const logout = async () => {
+  try {
+    const response = await fetch(`${API_BASE_URL}/logout`, {
+      method: 'POST',
+      credentials: 'include' // Include credentials (cookies) in the request
+    });
+
+    if (response.ok) {
+      // Clear the cookie successfully, redirect to login page or do other actions
+      navigate('/login');
+    } else {
+      console.log('Logout failed');
+    }
+  } catch (err) {
+    console.error('Logout error:', err);
+  }
+};
+
 
   return (
     <>
